@@ -1,6 +1,27 @@
+#countries {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .country {
     margin: 10px;
     padding: 20px;
     border: 2px solid skyblue;
     border-radius: 10px;
+}
+
+.country-details {
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+    border: 2px solid rgba(194, 194, 194, 0.568);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.521);
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    #countries {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
